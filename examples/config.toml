@@ -1,0 +1,10 @@
+# Copy to ~/.config/clickbridge/config.toml
+preset = "mywhoosh"      # or "none" for an empty map
+
+[options]
+backend = "auto"         # auto, hyprland, wtype, xdotool, uinput
+window = "mywhoosh"      # window regex (hyprland, xdotool); "" = focused window
+hold_ms = 40
+
+[keys]                   # BUTTON = "key"; "" removes a mapping
+NAV_DOWN = "d"

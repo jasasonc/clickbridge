@@ -1,0 +1,11 @@
+# side  button  raw frame (captured from a real Click v2 pair, 2026-10-18)
+left  NAV_DOWN   23 08 f7 ff ff ff 0f
+left  NAV_LEFT   23 08 fe ff ff ff 0f
+left  NAV_RIGHT  23 08 fb ff ff ff 0f
+left  NAV_UP     23 08 fd ff ff ff 0f
+left  SHIFT_UP_L 23 08 ff fd ff ff 0f
+right A          23 08 ef ff ff ff 0f
+right B          23 08 df ff ff ff 0f
+right SHIFT_UP_R 23 08 ff df ff ff 0f
+right Y          23 08 bf ff ff ff 0f
+right Z          23 08 ff fe ff ff 0f

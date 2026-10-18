@@ -1,0 +1,47 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "clickbridge"
+dynamic = ["version"]
+description = "Zwift Click v2 BLE controller to keyboard keys on Linux"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "GPL-3.0-or-later"
+license-files = ["LICENSE"]
+authors = [{ name = "Jaša Šonc" }]
+keywords = ["zwift", "click", "ble", "bluetooth", "mywhoosh", "linux"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: POSIX :: Linux",
+    "Environment :: Console",
+    "Topic :: System :: Hardware",
+]
+dependencies = [
+    "bleak>=0.22",
+    "tomli>=2; python_version < '3.11'",
+]
+
+[project.optional-dependencies]
+uinput = ["evdev>=1.6"]
+dev = ["pytest>=8", "ruff>=0.5"]
+
+[project.scripts]
+clickbridge = "clickbridge.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/jasasonc/clickbridge"
+
+[tool.hatch.version]
+path = "src/clickbridge/__init__.py"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 120
+src = ["src", "tests"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
