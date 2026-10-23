@@ -106,16 +106,18 @@ shift down), `--no-reset`, `--reset-after SEC`, `-v`.
 
 ## Daily unlock for Click v2
 
-The Click v2 firmware needs an unlock from the Zwift app about once a day. A
-locked unit works for about 1 minute after it connects. Then it stops.
+Other tools report that the Click v2 firmware needs an unlock from the Zwift
+app about once a day. clickbridge was tested on several days with no Zwift app
+installed, and both units worked for full rides.
 
-- If the unit stops, clickbridge sends RESET. The unit restarts and works for
-  another short time.
+If a unit still stops after about 1 minute:
+
+- clickbridge sends RESET. The unit restarts and works for another short time.
 - If the unit hides its Zwift service, clickbridge logs `LOCKED` and tries
   again every 30 s.
 
 To fix the problem, connect each unit once in the Zwift app on a phone or on
-Windows. The unit then works for the rest of the day.
+Windows. Please open an issue if this happens to you.
 
 ## Credits
 
