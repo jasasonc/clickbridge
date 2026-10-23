@@ -10,7 +10,8 @@ Holding a button does not repeat the key.
 
 ## Supported hardware
 
-- Zwift Click v2, left and right unit: tested.
+- Zwift Click v2, left and right unit: tested on full rides with MyWhoosh
+  (Wine/Proton through Lutris, Hyprland). Both units shift gears.
 - Zwift Click v1, Zwift Play, Zwift Ride: not tested. clickbridge ignores them.
 
 ## Install
